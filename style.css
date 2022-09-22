@@ -1,43 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body{
-    background: #222;
+    background: whitesmoke;
     text-align: center;
     padding: 1em;
 }
-
+.intro{
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    width: min(40em , calc(100% - 2em));
+    margin: 2em auto;
+    /* display: none; */
+}
 h1,h2,h3{
-    color: orangered;
+    color: #1c1c1c;
     line-height: 1.5;
     margin-block: .5em;
-    animation: changeColor 1s ease-in-out infinite;
 }
-@keyframes changeColor{
-    0%{
-        color: orangered;
-    }
-    50%{
-        color: orange;
-    }
-    100%{
-        color: orangered;
-    }
-}
+
 .start , .enter , .repeat{
     background: none;
     border: 0;
-    border-bottom: 2px solid orangered;
-    color: orangered;
+    border: 2px solid #1c1c1c;
+    background-color: #1c1c1c;
+    color: #FFFFFF;
     font-size: 1.5rem;
-    opacity: .8;
+    border-radius: 10px;
+    font-weight: 700;
     cursor: pointer;
+    padding: 10px 15px;
+    transition: all .5s ease-in-out;
+}
+.start:hover{
+    background: #FFFFFF;
+    color: #1c1c1c;
 }
 span{
-    color: #fff;
+    color: #1c1c1c;
     margin-block-end: 1em;
     opacity: .8;
     letter-spacing: 2px;
@@ -47,11 +52,13 @@ span{
 section{
     padding: 1em;
     width: min(30em , calc(100% - 1em));
+    background: white;
     margin: 3em auto;
+    border-radius: 10px;
     display: none;
 }
 input{
-    background: #000;
+    background: #1c1c1c;
     border:0;
     padding: 15px 15px;
     width: 100%;
@@ -59,12 +66,16 @@ input{
     color: #fff;
 }
 p{
-    color: #000;
+    color: #FFFFFF;
     font-size: 1.3rem;
     font-weight: 600;
     background: red;
     border-radius: 10px;
     padding: .3em;
+}
+.about{
+    color: red;
+    font-weight: 700;
 }
 .result{
     margin-block: 1em;
